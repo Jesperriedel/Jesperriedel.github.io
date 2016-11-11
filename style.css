@@ -1,0 +1,24 @@
+ body {
+      position: relative; 
+  }
+#home 
+ {
+	padding-top:50px;
+	height:500px;
+	color: #000; 
+	background-color: #fff;
+}
+#about
+ {
+	padding-top:50px;
+	height:500px;
+	color: #000; 
+	background-color:#fff;
+ }
+#projects
+  {
+	padding-top:50px;
+	height:500px;
+	color: #000; 
+	background-color:#fff;
+}

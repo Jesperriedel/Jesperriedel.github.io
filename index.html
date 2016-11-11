@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>De glade fiskemænd</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+
+  $("#myNavbar a").on('click', function(event) {
+
+  
+    event.preventDefault();
+
+ 
+    var hash = this.hash;
+
+    
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+   
+      window.location.hash = hash;
+    });
+  });
+});
+</script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <img style="margin-top: 8px;" width="30px" height="30px" src="images/logo.png"><a class="navbar-brand" href="#">De Glade Fiskemænd</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Hjem</a></li>
+          <li><a href="#about">Hvor og hvornår?</a></li>
+          <li><a href="#projects">Hvem er vi?</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>   
+<div id="header"></div> 
+
+<div id="home" class="container-fluid">
+<center>
+<img src="images/fishlogo.jpg"> <h1>Hjem</h1>
+   <br>
+      <br>
+ <p style="font-size:140%">  De glade fiskemænd
+     <br>
+     <br>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tempor ultricies. Aliquam purus leo, imperdiet at nulla ut, vulputate rutrum libero. Nullam eget nibh sollicitudin, porta nulla vitae, aliquet magna. Nulla pulvinar quam nisl. Aenean laoreet congue massa, a sodales quam laoreet vitae. Cum sociis natoque penatibus et magnis.  
+     <br>
+     <br>
+     //Jesper Riedel
+     
+  </p>
+</center>
+</div>
+<div id="about" class="container-fluid">
+  <center>
+  <img src="images/fishlogo.jpg"> <h1>Hvor og hvornår?</h1>
+      <br>
+      <br>
+ <p style="font-size:140%">    
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tempor ultricies. Aliquam purus leo, imperdiet at nulla ut, vulputate rutrum libero. Nullam eget nibh sollicitudin, porta nulla vitae, aliquet magna. Nulla pulvinar quam nisl. Aenean laoreet congue massa, a sodales quam laoreet vitae. Cum sociis natoque penatibus et magnis.  
+     <br>   
+    <br>
+  </center>
+</div>
+<div id="projects" class="container-fluid">
+<center>
+  <img src="images/fishlogo.jpg"> <h1>Hvem er vi?</h1>
+    <br>
+    <br>
+<p style="font-size:140%">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tempor ultricies. Aliquam purus leo, imperdiet at nulla ut, vulputate rutrum libero. Nullam eget nibh sollicitudin, porta nulla vitae, aliquet magna. Nulla pulvinar quam nisl. Aenean laoreet congue massa, a sodales quam laoreet vitae. Cum sociis natoque penatibus et magnis.  
+     <br> </p>
+</center>
+</div>
+<div id="contact" class="container-fluid">
+
+
